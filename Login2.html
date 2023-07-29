@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html{height: 100%;}
+            body{
+                margin: 0px;
+                height: 100%;
+                background: #1D2B64;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                font-family: 'Courier New', monospace;
+            }
+            .login{
+                width: 20vw;
+                height:60vh;
+                border:10px solid;
+                padding:10px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                transition: 0.4s;
+            }
+            .container{
+                padding:10px 0px;
+                width:100%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
+            }
+            .inpt{
+                height: 1vh;
+                width: 100%;
+                padding: 1vh 1vw;
+                background:transparent;
+                border:2px solid;
+                transition: 0.4s;
+            }
+            .inpt:hover{
+                scale: 1.1;
+                cursor: pointer;
+            }
+            .inpt:focus{
+                background: transparent;
+                color: black;
+                scale: 1.1;
+            }
+            .inpt:invalid{
+                color: #800000;
+
+            }
+            .inpt:active{
+                background:transparent;
+            }
+            form{
+                display: flex;
+                flex-direction: column; 
+                width: 100%; 
+                height: 100%;
+            }
+            form div{
+                width: 100%;
+                height: 16%;
+            }
+            .fa{
+                font-size: 22px;
+                text-decoration: none;
+                margin: 10px 5px;
+                padding: 2px;
+                color: black;
+                transition: 0.4s;
+            }
+            .fa:hover{
+                scale: 1.5;
+            }
+            .fa-facebook{
+                background:transparent;
+            }
+            .fa-twitter{
+                background:transparent;
+            }
+            .fa-telegram{
+                background:transparent;
+            }
+            .fa-instagram{
+                background:transparent;
+            }
+            button{
+                border-radius: 5px;
+                background: transparent;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 0.5vh 1vw;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+            button:hover,button:focus{
+                scale: 1.1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="display:flex; align-items:center; justify-content:center; width: 100%; height: 100%;">
+            <div class="login">
+                <div class="container">
+                    <div style="font-size:4vmin; font-weight: bold;">LogIn</div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; width: 70%;">
+                        <div style="margin: 20px 0px;">
+                            <div style="font-size:16px; font-weight:bold;">Email</div>
+                            <div style="width: 12vw"><input type="email" id="email" name="email" class="inpt"></div>
+                        </div>
+                        <div style="margin: 20px 0px;">
+                            <div style="font-size:16px; font-weight:bold;">Password</div>
+                            <div style="width: 12vw;"><input type="password" id="pass" name="pass" class="inpt"></div>
+                            <div style="font-size:12px; font-weight:bold; margin-top: 10px;"><a href="#" style="text-decoration: none; color: black;">forgot password?</a></div>
+                        </div>
+                        <div style="align-items: center; margin: 20px 0px; display: flex; justify-content: center;"><button type="submit">LogIn</button></div>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-telegram"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

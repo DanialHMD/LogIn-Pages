@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html{
+                height: 100%;
+            }
+            body{
+                overflow: hidden;
+                height: 100%;
+                background: linear-gradient(34deg, rgba(30,22,159,1) 0%, rgba(0,0,0,1) 60%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 13vw;
+                height: 50vh;
+                font-family: tahoma,sans-serif;
+            }
+            form{
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+            }
+            form > input[type=email],input[type=password]{
+                color: #EDF4ED;
+                border: none;
+                background: transparent;
+                border-bottom: 3px solid #EDF4ED;
+                font-size: 16px;
+                margin-bottom: 20px;
+                transition: .4s;
+            }
+            form > input[type=email]:focus::placeholder,input[type=password]:focus::placeholder{
+                color:transparent
+            }
+            form > input[type=email]:focus,input[type=password]:focus{
+                color: #EDF4ED;
+                outline: none;
+                scale: 1.1;
+            }
+            form > div > input[type=submit]{
+                background: transparent;
+                font-size: 18px;
+                cursor: pointer;
+                border: none;
+                color: #EDF4ED;
+                border-bottom: 3px solid #EDF4ED;
+                transition: .3s;
+            }
+            form > div > input[type=submit]:hover{
+                scale: 1.2;
+            }
+            ::placeholder{
+                color: #EDF4ED;
+                transition: .4s;
+            }
+            form > label{
+                color: #EDF4ED;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .social{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .social > a{
+                color: #EDF4ED;
+                text-decoration: none;
+                font-size: 30px;
+                transition: .3s;
+            }
+            .social > a:hover{
+                cursor: pointer;
+                scale: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="icon">
+                <i><img src="Profile.png"></i>
+            </div>
+            <form onkeydown="return event.key != 'Enter';">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Email..." autocomplete="off" spellcheck="false" >
+                <label for="Password">Password:</label>
+                <input type="password" id="pass" placeholder="Password...">
+                <div style="display: flex; justify-content: center;"><input type="submit" value="Submit" style="width: 40%; text-align: center;"></div>
+            </form>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-telegram"></a>
+                <a href="#" class="fa fa-skype"></a>
+            </div>
+        </div>
+    </body>
+</html>

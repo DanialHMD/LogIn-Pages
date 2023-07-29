@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+
+        <style>
+            html{
+                height:100%;
+            }
+            body{
+                background-color:#ffff;
+                margin: 0;
+            }
+            .container{
+                display:flex;
+                width:50%;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .loginbox{
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+                flex-direction: column;
+
+                background-color: #99aab5;
+                color: #2c2f33;
+
+                border-radius: 10px;
+                width:60%;
+                height:60%;
+            }
+            .loginbox div{
+                margin:1vh 15px;
+            }
+            .inputbox{
+                background-color: #ffff;
+                color: #2c2f33;
+                font-size: 20px;
+                border:2px #99aab5;
+                border-radius: 10px;
+                width: 95%;
+                margin:10px 0;
+                height:4vh;
+            }
+            .inputbox:hover{
+                box-shadow: 0px 0px 20px 5px rgba(44,47,51,1);
+            }
+            .btn{
+                background-color: #ffff;
+                color:#2c2f33;
+                border:2px #99aab5;
+                border-radius: 10px;
+                width:10vh;
+                height:4vh;
+            }
+            .btn:hover{
+                box-shadow: 0px 0px 20px 5px rgba(44,47,51,1);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display:flex; flex-direction:row;">
+            <!--login box area-->
+            <div class="container">
+                <div class="loginbox">
+                    <div style="font-size:24px; text-align:center;"><b>Log In</b></div>
+                    <div>
+                        <div><b>Email address:</b></div>
+                        <div><input class="inputbox" type="email" id="email" name="email"></div>
+                    </div>
+                    <div>
+                        <div><b>Password:</b></div>
+                        <div><input class="inputbox" type="password" id="pass" name="password"></div>
+                        <div><a href="#passreset" style="text-decoration:none; font-size: 12px; color:#2c2f33;"><b>Forgot Your Password?</b></a></div>
+                    </div>
+                    <div style="display:flex; justify-content:center;"><button class="btn"><b>Log In</b></button></div>
+                </div>
+            </div>
+            <!--content area-->
+            <div class="container" style="display:flex; color: white; background-color: #2c2f33;">
+                <div style="justify-content:center; width:50%; font-size:8vh; text-align:center; align-items:stretch;">
+                    <b>Chase Your Dreams, No Matter What Gets In Your Way.</b>
+                </div>
+            </div>
+        </div>  
+    </body>
+</html>
